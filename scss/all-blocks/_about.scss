@@ -1,0 +1,97 @@
+.about{
+   margin-bottom: 168px;
+}
+
+.about .container{
+   padding: 115px 85px;
+   background-image: url("../image/Bitmap-about.jpg");
+   background-size: cover;
+   background-repeat: no-repeat;
+   border-radius: 10px;
+}
+
+.about__page{
+   width: 100%;
+   max-width: 445px;
+}
+
+.about-page__heading{
+   margin-top: 0px;
+   margin-bottom: 32px;
+   font-family: "Fraunces";
+   font-style: normal;
+   font-weight: 900;
+   font-size: 40px;
+   line-height: 48px;
+   color: #FEFCF7;
+}
+
+.about-page__info{
+   margin: 0;
+   font-family: "Barlow";
+   font-style: normal;
+   font-weight: normal;
+   font-size: 16px;
+   line-height: 26px;
+   color: #FEFCF7;
+}
+
+@include media-max(835px){
+   
+   .about .container{
+      padding: 75px 80px;
+   }
+   
+   .about__page{
+      width: 100%;
+      max-width: 398px;
+   }
+   
+   
+}  
+
+@include media-max(700px){
+   
+   .about .container{
+      padding: 65px 85px;
+   }
+}
+
+@include media-max(605px){
+   
+   .about .container{
+      padding: 50px 85px;
+   }
+}
+
+@include media-max(535px){
+   
+   .about .container{
+      padding: 45px 85px;
+   }
+}
+
+@include media-max(520px){
+   
+   .about .container{
+      padding: 160px 85px;
+      background-image: url("../image/about-bg-mob.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      border-radius: 10px;
+   }
+
+   .about__page{
+      width: 100%;
+      max-width: 280px;
+   }
+
+   .about-page__heading{
+      font-size: 28px;
+      text-align: center;
+   }
+   
+   .about-page__info{
+      font-size: 15px;
+   }
+}

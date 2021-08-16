@@ -1,0 +1,164 @@
+.commitment{
+   margin-bottom: 168px;
+}
+
+.commitment .container{
+   display: flex;
+   align-items: center;
+}
+
+.commitment__image-mob{
+   display: none;
+}
+
+.commitment__image{
+   margin-right: 125px;
+}
+
+.commitment__page{
+   width: 100%;
+   max-width: 540px;
+}
+
+
+.commitment-page__heading{
+   margin-top: 0;
+   margin-bottom: 32px;
+   font-family: "Fraunces";
+   font-style: normal;
+   font-weight: 900;
+   font-size: 40px;
+   line-height: 48px;
+   color: #333D4B;
+}
+
+.commitment-page__info{
+   margin: 0;
+   font-family: "Barlow";
+   font-style: normal;
+   font-weight: normal;
+   font-size: 16px;
+   line-height: 26px;
+   color: #333D4B;
+   mix-blend-mode: normal;
+   opacity: 0.8;
+}
+
+
+@include media-max(1030px){
+   
+   .commitment__page{
+      width: 100%;
+      max-width: 480px;
+   }
+}
+
+@include media-max(975px){
+   
+   .commitment__image{
+      margin-right: 95px;
+   }
+   
+   .commitment__page{
+      justify-content: center;
+      width: 100%;
+      max-width: 420px;
+   }
+}
+
+@include media-max(905px){
+   
+   .commitment__image{
+      margin-right: 20px;
+   }
+   
+   .commitment__page{
+      width: 100%;
+      max-width: 400px;
+   }
+}
+
+@include media-max(835px){
+   
+   .commitment{
+      margin-bottom: 250px;
+   }
+
+   .commitment__image{
+      margin-right: 20px;
+   }
+   
+   .commitment__page{
+      width: 100%;
+      max-width: 390px;
+   }
+   
+   .commitment-page__heading{
+      font-size: 32px;
+   }
+   
+   .commitment-page__info{
+      font-size: 15px;
+   }
+}
+
+@include media-max(775px){
+   
+   
+   .commitment__image{
+      width: 100%;
+      max-width: 281px;
+      height: 470px;
+   }
+   
+   .commitment__page{
+      width: 100%;
+      max-width: 350px;
+   }
+
+   .commitment-page__heading{
+      margin: 0;
+      margin-bottom: 30px;
+   }
+}
+
+@include media-max(735px){
+   
+   
+   
+   .commitment__page{
+      width: 100%;
+      max-width: 320px;
+   }
+}
+
+@include media-max(670px){
+   
+   
+   .commitment__page{
+      width: 100%;
+      max-width: 290px;
+   }
+}
+
+@include media-max(635px){
+
+   .commitment .container{
+      flex-direction: column;
+   }
+
+   .commitment__image{
+      display: none;
+   }
+
+   .commitment__image-mob{
+      display: block;
+      margin-bottom: 48px;
+   }
+
+   .commitment__page{
+      width: 100%;
+      max-width: 327px;
+      margin: 0 auto;
+   }
+}

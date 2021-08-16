@@ -1,0 +1,388 @@
+.choose{
+   padding-bottom: 450px;
+}
+
+.choose__page  {
+   position: relative;
+   width: 100%;
+   max-width: 1280px;
+   height: 577px;
+   margin: 0 auto;
+   padding: 20px;
+   padding-top: 64px; 
+   background: #2C343E;
+   border-radius: 10px;
+}
+
+.choose__box-top{
+   width: 100%;
+   max-width: 540px;
+   margin: 0 auto;
+   margin-bottom: 24px;
+}
+
+.choose__heading{
+   margin: 0;
+   margin-bottom: 32px;
+   font-family: "Fraunces 9pt";
+   font-style: normal;
+   font-weight: 900;
+   font-size: 40px;
+   line-height: 48px;
+   text-align: center;
+   color: #FEFCF7;
+}
+
+.choose__info{
+   margin: 0 auto;
+   font-family: "Barlow";
+   font-style: normal;
+   font-weight: normal;
+   font-size: 16px;
+   line-height: 26px;
+   text-align: center;
+   color: #FEFCF7;
+   mix-blend-mode: normal;
+   opacity: 0.8;
+}
+
+.choose__list{
+   position: absolute;
+   left: 100px;
+   top: 320px;
+   display: flex;
+   margin: 0;
+   padding: 0;
+   list-style-type: none;
+}
+
+.choose__item{
+   position: relative;
+   width: 100%;
+   max-width: 350px;
+   display: flex;
+   margin-right: 30px;
+   padding: 40px;
+   padding-top: 200px;
+   background: #0E8784;
+   border-radius: 8px;
+}
+
+.choose__item:nth-child(1)::before{
+   position: absolute;
+   width: 100%;
+   max-width: 71px;
+   height: 72px;
+   left: 136px;
+   top: 72px;
+   display: block;
+   margin: 0 auto;
+   margin-bottom: 56px;
+   background-image: url("../image/coffee-bean.svg");
+   background-repeat: no-repeat;
+   background-size: contain;
+   content: "";
+}
+
+.choose__item:nth-child(2)::before{
+   position: absolute;
+   width: 100%;
+   max-width: 71px;
+   height: 72px;
+   left: 136px;
+   top: 72px;
+   display: block;
+   margin: 0 auto;
+   margin-bottom: 56px;
+   background-image: url("../image/Combined\ Shape.svg");
+   background-repeat: no-repeat;
+   background-size: contain;
+   content: "";
+}
+
+.choose__item:nth-child(3)::before{
+   position: absolute;
+   width: 100%;
+   max-width: 71px;
+   height: 72px;
+   left: 136px;
+   top: 72px;
+   display: block;
+   margin: 0 auto;
+   margin-bottom: 56px;
+   background-image: url("../image/Combined\ Shape-truck.svg");
+   background-repeat: no-repeat;
+   background-size: contain;
+   content: "";
+}
+
+.choose__item-box{
+   width: 100%;
+   max-width: 255px;
+}
+
+.choose-item__heading{
+   margin: 0;
+   margin-bottom: 24px;
+   font-family: "Fraunces";
+   font-style: normal;
+   font-weight: 900;
+   font-size: 24px;
+   line-height: 32px;
+   text-align: center;
+   color: #FEFCF7;
+}
+
+.choose-item__info{
+   margin: 0;
+   font-family: "Barlow";
+   font-style: normal;
+   font-weight: normal;
+   font-size: 16px;
+   line-height: 26px;
+   text-align: center;
+   color: #FEFCF7;
+}
+
+@include media-max(1230px){
+
+   .choose__list{
+      width: 100%;
+      max-width: 1000px;
+      flex-direction: column;
+   }
+
+   .choose__item{
+      width: 80%;
+      max-width: 1000px;
+      margin-bottom: 48px;  
+      padding: 20px;
+   }
+
+   .choose__item:nth-child(1)::before{
+      top: 30%;
+      left: 70px;
+      display: block;
+      margin: 0;
+      margin-right: 50px;  
+   }
+
+   .choose__item:nth-child(2)::before{
+      top: 30%;
+      left: 70px;
+      display: block;
+      margin: 0;
+      margin-right: 50px;  
+   }
+
+   .choose__item:nth-child(3)::before{
+      top: 30%;
+      left: 70px;
+      display: block;
+      margin: 0;
+      margin-right: 50px;  
+   }
+
+   .choose__item-box{
+      width: 90%;
+      max-width: 345px;
+      margin-left: auto;
+      margin-right: auto;
+   }
+
+   .choose-item__heading{
+      text-align: left;
+   }
+
+   .choose-item__info{
+      text-align: left;
+   }
+}
+
+@include media-max(865px){
+
+   .choose__item:nth-child(1)::before{
+      left: 35px;
+   }
+
+   .choose__item:nth-child(2)::before{
+      left: 35px;
+   }
+
+   .choose__item:nth-child(3)::before{
+      left: 35px;
+   }
+
+}
+
+@include media-max(745px){
+   
+   .choose__item:nth-child(1)::before{
+      left: 15px;
+   }
+
+   .choose__item:nth-child(2)::before{
+      left: 15px;
+   }
+
+   .choose__item:nth-child(3)::before{
+      left: 15px;
+   }
+
+}
+
+@include media-max(695px){
+
+   .choose{
+      padding-bottom: 1150px;
+   }
+   
+
+   .choose__list{
+      left: 155px;  
+      width: 100%;
+      flex-direction: column;
+   }
+
+   .choose__item{
+      width: 100%;
+      max-width: 280px;
+      margin: 0;
+      margin-bottom: 48px;  
+      padding: 35px;
+      padding-top: 170px;
+      text-align: center;
+   }
+
+   .choose__item:nth-child(1)::before{
+      top: 72px;
+      left: 70px;
+      display: block;
+      margin: 0; 
+   }
+
+   .choose__item:nth-child(2)::before{
+      top: 72px;
+      left: 70px;
+      display: block;
+      margin: 0; 
+   }
+
+   .choose__item:nth-child(3)::before{
+      top: 72px;
+      left: 70px;
+      display: block;
+      margin: 0;
+   }
+
+   .choose__item-box{
+      width: 90%;
+      max-width: 212px;
+      margin-left: auto;
+      margin-right: auto;
+   }
+}
+
+@include media-max(590px){
+
+   .choose__list{
+      left: 130px;
+   }
+}
+
+@include media-max(540px){
+
+   .choose__box-top{
+      width: 100%;
+      max-height: 290px;
+   }
+
+   .choose__heading{
+      font-size: 28px;
+   }
+
+   .choose__info{
+      font-size: 15px;
+   }   
+}
+
+@include media-max(520px){
+
+   .choose__list{
+      left: 105px;
+   }
+}
+
+@include media-max(480px){
+
+   .choose__list{
+      left: 88px;
+   }
+}
+
+@include media-max(450px){
+
+   .choose__list{
+      left: 70px;
+   }
+}
+
+@include media-max(425px){
+
+   .choose__list{
+      left: 60px;
+   }
+}
+
+@include media-max(405px){
+
+   .choose__list{
+      left: 45px;
+   }
+}
+
+@include media-max(385px){
+
+   .choose__list{
+      left: 25px; 
+   }
+}
+
+@include media-max(365px){
+
+   .choose__list{
+      left: 25px;
+   }
+}
+
+@include media-max(355px){
+
+   .choose__list{
+      left: 20px;
+   }
+
+   .choose__item{
+      padding: 20px;
+      padding-top: 150px;    
+   }
+}
+
+@include media-max(350px){
+
+   .choose__list{
+      left: 30px;
+   }
+
+   .choose__item{
+      width: 100%;
+      max-width: 250px;
+   }
+}
+
+@include media-max(335px){
+
+   .choose__list{
+      left: 20px;
+   }
+
+}

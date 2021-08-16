@@ -1,0 +1,249 @@
+.properties{
+   margin-bottom: 80px;
+}
+
+.properties .container{
+   display: flex;
+   justify-content: space-around;
+}
+
+.properties__leftpage{
+   margin-right: 125px;
+}
+
+.leftpage__list{
+   width: 100%;
+   max-width: 255px;
+   height: 356px;
+   margin: 0;
+   padding: 0;
+   list-style-type: none;
+}
+
+.leftpage_item{
+   margin-bottom: 24px;
+}
+
+.leftpage_item + .leftpage_item{
+   margin-top: 24px;
+}
+
+.leftpage__link{
+   padding: 10px;
+   font-family: "Fraunces";
+   font-style: normal;
+   font-weight: 900;
+   font-size: 24px;
+   line-height: 32px;
+   text-decoration: none;
+   color: #333D4B;
+   opacity: 0.25;
+}
+
+.leftpage__link--active{
+   padding: 10px;
+   font-family: "Fraunces";
+   font-style: normal;
+   font-weight: 900;
+   font-size: 24px;
+   line-height: 32px;
+   text-decoration: none;
+   color: #333D4B;
+}
+
+
+.link__span--green{
+   color: #0E8784;
+}
+
+.properties__right{
+   width: 100%;
+   max-width: 780px;
+}
+
+.right__item{
+   margin: 0;
+   margin-bottom: 90px;
+}
+
+.order__item__heading{
+   margin: 0;
+   margin-bottom: 40px;
+   font-family: "Fraunces";
+   font-style: normal;
+   font-weight: 900;
+   font-size: 40px;
+   line-height: 48px;
+   color: #83888F;
+}
+
+.order{
+   display: flex;
+}
+
+.order-stage__input-group{
+   width: 100%;
+   max-width: 230px;
+   padding: 32px 25px;
+   background-color: #F4F1EB;
+   border-radius: 8px;
+}
+
+.order-stage__input-group + .order-stage__input-group{
+   margin-left: 23px;
+}
+
+.order-stage__input-group:hover{
+   background-color: #FDD6BA;  
+}
+
+.control__heading{
+   margin: 0;
+   margin-bottom: 24px;
+   font-family: "Fraunces";
+   font-style: normal;
+   font-weight: 900;
+   font-size: 24px;
+   line-height: 32px;
+   color: #333D4B;
+}
+
+.control__info{
+   margin: 0;
+   font-family: "Barlow";
+   font-style: normal;
+   font-weight: normal;
+   font-size: 16px;
+   line-height: 26px;
+   color: #333D4B;
+}
+
+.order-stage__input-box:checked ~ .order-stage__input-control{
+   background-color: #333;
+}
+
+.order-stage__input-control{
+   background-color: #F4F1EB;
+}
+
+
+
+
+.bottom{
+   width: 100%;
+   max-width: 730px;
+   padding: 31px 64px;
+   margin-bottom: 40px;
+   background-color: #2C343E;
+   border-radius: 10px;
+} 
+
+.bottom__heading{
+   display: block;
+   margin: 0;  
+   margin-bottom: 8px;
+   font-family: "Barlow";
+   font-style: normal;
+   font-weight: normal;
+   font-size: 16px;
+   line-height: 26px;
+   text-transform: uppercase;
+   color: #FFFFFF;
+   mix-blend-mode: normal;
+   opacity: 0.5;
+}
+
+.bottom_blockquote{
+   margin: 0;
+   margin-right: auto;
+   font-family: "Fraunces";
+   font-style: normal;
+   font-weight: 900;
+   font-size: 24px;
+   line-height: 40px;
+   color: #FFFFFF;
+}
+
+.bottom__span{
+   color: #0E8784;
+}
+
+.btn{
+   width: 100%;
+   max-width: 217px;
+   display: block;
+   margin-left: 525px;
+   padding: 16px 16px;
+   font-family: "Fraunces";
+   font-style: normal;
+   font-weight: 900;
+   font-size: 18px;
+   line-height: 25px;
+   text-align: center;
+   color: #FEFCF7;
+   background: #0E8784;
+   border: none;
+   border-radius: 6px;
+}
+
+@include media-max(1142px){
+   
+   .properties__left{
+      margin-right: 50px;
+   }
+}
+
+@include media-max(950px){
+   
+   .properties__left{
+      display: none;
+   }
+   
+   .order__item__heading{
+      font-family: "Fraunces";
+      font-style: normal;
+      font-weight: 900;
+      font-size: 32px;
+      line-height: 48px;
+   }
+   
+   .control__heading{
+      font-style: normal;
+      font-weight: 900;
+      font-size: 24px;
+      line-height: 32px;
+   }
+   
+   .bottom__heading{
+      font-family: 'Barlow';
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 26px;
+   }
+   
+   .bottom_blockquote{
+      font-size: 24px;
+      line-height: 40px;
+   }
+   
+   .btn{
+      margin: 0 auto;
+   }
+}
+
+@include media-max(665px){
+
+   .order{
+      flex-direction: column;
+   }
+
+   .order-stage__input-group{
+      width: 100%;   
+      max-width: 330px;
+   }
+
+   .order-stage__input-group + .order-stage__input-group{
+      margin: 0;
+   }
+}

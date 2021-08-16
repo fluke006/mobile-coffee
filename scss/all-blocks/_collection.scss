@@ -1,0 +1,91 @@
+.collection {
+   margin: 0 auto;
+   padding: 200px 0;
+   width: 100%;
+   max-width: 1111px;
+   background-image: url("../image/ourcollection.png");
+   background-size: contain;
+   background-repeat: no-repeat;
+   background-position: left calc(50% + 0px) top 80px;
+}
+
+.collection__list{
+   display: flex;
+   margin: 0;  
+   padding: 0;
+   list-style-type: none;
+}
+
+.collection__item{
+   margin-right: 15px;
+   padding: 10px;
+}
+
+.item__box{
+   width: 100%;
+   max-width: 255px;
+   margin: 0;
+}
+
+.collection-item__heading{
+   margin-top: 0;
+   margin-bottom: 24px;
+   font-family: "Fraunces 9pt";
+   font-style: normal;
+   font-weight: 900;
+   font-size: 24px;
+   line-height: 32px;
+   text-align: center;
+   color: #333D4B;
+}
+
+.collection-item__info{
+   margin: 0;
+   font-family: "Barlow";
+   font-style: normal;
+   font-weight: normal;
+   font-size: 16px;
+   line-height: 26px;
+   text-align: center;
+   color: #333D4B;
+}
+
+@include media-max(770px){
+
+   .collection__list{
+      flex-direction: column;
+   }
+
+   .collection__item{
+      display: flex;
+      width: 95%;   
+      margin-bottom: 48px;
+   }
+
+   .item__img{
+      margin-right: 15px;
+   }
+
+   .item__box{
+      max-width: 600px;
+   }
+
+   .collection__item::before{
+      width: 100%;
+   }
+}
+
+@include media-max(485px){
+
+   .collection__list{
+      flex-direction: column;
+   }
+
+   .collection__item{
+      flex-direction: column;
+   }
+   .item__img{
+      margin: 0 auto;
+      margin-bottom: 24px;
+   }
+}

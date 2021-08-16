@@ -1,0 +1,98 @@
+.plan  {
+   width: 100%;
+   max-width: 1280px;
+   margin: 0 auto;
+   margin-bottom: 154px;
+   padding: 130px 85px;
+   background-image: url('../image/Bitmap-plan.png');
+   border-radius: 10px;
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+   overflow: hidden;
+}
+
+.plan__page{
+   width: 100%;
+   max-width: 485px;
+}
+
+.plan__heading{
+   margin: 0;
+   margin-bottom: 32px;
+   font-family: "Fraunces";
+   font-style: normal;
+   font-weight: 900;
+   font-size: 72px;
+   line-height: 72px ;
+   color: #FEFCF7;
+}  
+
+.plan__info{
+   margin: 0;
+   font-family: "Barlow";
+   font-style: normal;
+   font-weight: normal;
+   font-size: 16px;
+   line-height: 26px;
+   color: #FEFCF7;
+   mix-blend-mode: normal;
+   opacity: 0.8;
+}
+
+@include media-max(770px){
+
+   .plan{
+      margin-bottom: 144px;
+   }
+   
+   .plan__page{
+      width: 100%;
+      max-width: 398px;
+   }
+   
+   .plan__heading{
+      font-size: 48px;
+      line-height: 48px;
+   }
+   
+   .plan__info{
+      font-size: 15px;
+      line-height: 25px;
+   }
+}
+
+@include media-max(535px){
+   
+   .plan{
+      margin-bottom: 120px;
+      padding: 90px 85px;
+      background-image: url("../image/plan-mob-bg.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+   }
+   
+   .plan__page{
+      width: 100%;
+      max-width: 280px;
+      text-align: center;
+   }
+   
+   .plan__heading{
+      font-size: 40px;
+      line-height: 40px;
+   }
+}
+ 
+@include media-max(425px){
+
+   .plan{
+      padding: 70px 85px;
+   }
+
+   .plan__page{
+      width: 100%;
+      max-width: 230px;
+   }
+
+}
