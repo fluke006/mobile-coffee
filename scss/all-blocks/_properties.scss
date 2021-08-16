@@ -81,21 +81,10 @@
    display: flex;
 }
 
-.order-stage__input-group{
-   width: 100%;
-   max-width: 230px;
-   padding: 32px 25px;
-   background-color: #F4F1EB;
-   border-radius: 8px;
-}
-
 .order-stage__input-group + .order-stage__input-group{
    margin-left: 23px;
 }
 
-.order-stage__input-group:hover{
-   background-color: #FDD6BA;  
-}
 
 .control__heading{
    margin: 0;
@@ -118,13 +107,23 @@
    color: #333D4B;
 }
 
-.order-stage__input-box:checked ~ .order-stage__input-control{
-   background-color: #333;
+.order-stage__input-control {
+   display: block;
+   width: 100%;
+   max-width: 230px;
+   padding: 32px 25px;
+   background-color: #F4F1EB;
+   border-radius: 8px;
 }
 
-.order-stage__input-control{
-   background-color: #F4F1EB;
-}
+.order-stage__input-control:hover{
+   background-color: #FDD6BA;  
+} 
+
+.order-stage__input-box:checked + .order-stage__input-control   {
+   background: #0E8784;
+   border-radius: 8px;
+} 
 
 
 
@@ -233,16 +232,16 @@
 }
 
 @include media-max(665px){
-
+   
    .order{
       flex-direction: column;
    }
-
+   
    .order-stage__input-group{
       width: 100%;   
       max-width: 330px;
    }
-
+   
    .order-stage__input-group + .order-stage__input-group{
       margin: 0;
    }
